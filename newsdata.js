@@ -16,7 +16,8 @@ newsForm.addEventListener("submit", function(e){
 });
 
 async function fetchNews(keyword){
-    const req_url = `${url}?apikey=${api_key}&q=${keyword}`;
+    // const req_url = `${url}?apikey=${api_key}&q=${keyword}`;
+    const req_url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b8607a6d3a98437e942b980eccdd39b8`;
     const jsonData = await fetch(req_url);
     console.log(jsonData);
 }
